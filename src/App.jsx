@@ -1,4 +1,5 @@
 import picture from "/picture.png";
+import { useTitle } from "./customHooks/useTitle";
 import { PiBagSimpleFill } from "react-icons/pi";
 import { AiFillHome } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
@@ -14,7 +15,9 @@ import { FaCode } from "react-icons/fa";
 
 import { FaStarOfLife } from "react-icons/fa6";
 
+
 export default function App() {
+  useTitle("Ehsan Alimardani")
   return (
     <main className="bg-[#202124] flex max-md:flex-col max-md:gap-y-2 sm:px-20 md:px-0 w-full font-ubunto">
       {/* Left Side */}
